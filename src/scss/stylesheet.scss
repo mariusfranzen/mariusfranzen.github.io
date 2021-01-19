@@ -1,0 +1,16 @@
+@use "leftSection";
+@use "rightSection";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    justify-content: center;
+}
