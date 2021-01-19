@@ -1,5 +1,7 @@
 @use "leftSection";
 @use "rightSection";
+@use "grid";
+@import "./fonts.scss";
 
 html, body {
     margin: 0;
@@ -10,6 +12,7 @@ html, body {
 .container {
     align-items: center;
     display: flex;
+    flex-direction: row;
     height: 100vh;
     text-rendering: optimizeLegibility;
     justify-content: center;
