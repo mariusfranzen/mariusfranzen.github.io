@@ -1,7 +1,7 @@
 ## Welcome to my GitHub!
 
 ### Highlighted projects:
-[mariusfranzen](https://github.com/mariusfranzen/mariusfranzen) - My resumé webpage, made with React.js (In development). Link: [mariusfranzen.online](www.mariusfranzen.online)
+[mariusfranzen](https://github.com/mariusfranzen/mariusfranzen) - My resumé webpage, made with React.js (In development). Link: [mariusfranzen.online](https://mariusfranzen.online/)
 
 [pizzaProject](https://github.com/mariusfranzen/pizza_project) - A project that I and my team is working on as a final project for our full stack programming course. It is using Java Spring.io as its backend, and JavaScript React.js as frontend. (In development)
 
