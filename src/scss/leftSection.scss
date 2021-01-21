@@ -1,6 +1,10 @@
 @import "./colors.scss";
+@import "./sizes.scss";
 
 .leftSection {
+    @media (max-width: $screen-size-phone) {
+        width: 100vw;
+    }
     background-color: $main-color;
     width: 50vw;
     height: 100vh;

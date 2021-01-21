@@ -2,18 +2,28 @@
 @use "rightSection";
 @use "grid";
 @import "./fonts.scss";
+@import "./sizes.scss";
 
 html, body {
     margin: 0;
     padding: 0;
+}
+
+body {
     overflow: hidden;
+    @media (max-width: $screen-size-phone) {
+        overflow-y: scroll;
+    }
 }
 
 .container {
+    @media (max-width: $screen-size-phone) {
+        flex-direction: column;
+    }
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 100%;
     text-rendering: optimizeLegibility;
     justify-content: center;
 }

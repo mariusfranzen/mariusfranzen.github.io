@@ -7,6 +7,11 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 920px) {
+  .leftSection {
+    width: 100vw;
+  }
+}
 .leftSection .profile {
   display: flex;
   flex-direction: column;
@@ -74,6 +79,13 @@
   width: 50vw;
   height: 100vh;
   overflow-y: scroll;
+}
+@media (max-width: 920px) {
+  .right-section {
+    width: 100vw;
+    height: auto;
+    overflow-y: hidden;
+  }
 }
 .right-section .header {
   margin-top: 0px;
@@ -166,16 +178,29 @@
 html, body {
   margin: 0;
   padding: 0;
+}
+
+body {
   overflow: hidden;
+}
+@media (max-width: 920px) {
+  body {
+    overflow-y: scroll;
+  }
 }
 
 .container {
   align-items: center;
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 100%;
   text-rendering: optimizeLegibility;
   justify-content: center;
+}
+@media (max-width: 920px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

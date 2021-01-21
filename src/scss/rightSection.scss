@@ -1,6 +1,12 @@
 @import "./colors.scss";
+@import "./sizes.scss";
 
 .right-section {
+    @media (max-width: $screen-size-phone) {
+        width: 100vw;
+        height: auto;
+        overflow-y: hidden;
+    }
     width: 50vw;
     height: 100vh;
     overflow-y: scroll;
