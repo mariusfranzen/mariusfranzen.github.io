@@ -3,10 +3,14 @@
 @use "grid";
 @import "./fonts.scss";
 
+$screen-size-s: 1230px;
+$screen-size-m: 1920px;
+$screen-size-l: 1440px;
+
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container {

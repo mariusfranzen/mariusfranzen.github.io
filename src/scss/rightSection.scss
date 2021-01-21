@@ -1,4 +1,95 @@
-.rightSection {
+@import "./colors.scss";
+
+.right-section {
     width: 50vw;
     height: 100vh;
+    overflow-y: scroll;
+
+    .header {
+        margin-top: 0px;
+        font-size: 1rem;
+        white-space: nowrap;
+        flex: 0 0 30%;
+        color: $main-color;
+        font-variant: small-caps;
+    }
+
+    .section {
+        margin: 70px;
+
+        .text-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            .text {
+                flex: 0 0 calc(70%);
+            }
+
+            p {
+                margin-top: 0px;
+            }
+        }
+
+        .date-list-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            .items {
+                flex: 0 0 calc(70%);
+
+                .group {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+    
+                    .date-group {
+                        text-align: end;
+                        white-space: nowrap;
+                        text-transform: capitalize;
+    
+                        .start-date {
+                            margin: 0;
+                        }
+            
+                        .end-date {
+                            margin: 0;
+                        }
+                    }
+    
+                    .vertical-group {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+    
+                        .title-group {
+                            text-transform: capitalize;
+                            
+                            .title {
+                                margin: 0;
+                            }
+        
+                            .subtitle {
+                                margin: 0;
+                                font-style: italic;
+                            }
+                        }
+    
+                        .notes-list {
+                            padding: 0;
+                            margin-top: 0;
+    
+                            li {
+                                &::first-letter {
+                                    text-transform: capitalize;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
