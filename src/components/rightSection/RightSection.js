@@ -45,7 +45,7 @@ const experiences = [
             "kabeldragning och installation av el-utrustning"
         ],
         startDate: new Date(2017, 7),
-        endDate: new Date(2027, 8)
+        endDate: new Date(2017, 8)
     },
     {
         title: "godisplockare",
