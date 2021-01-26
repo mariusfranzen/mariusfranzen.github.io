@@ -2,7 +2,7 @@
 @import "./sizes.scss";
 
 .leftSection {
-    @media (max-width: $screen-size-phone) {
+    @media (max-width: $screen-size-phone-l) {
         width: 100vw;
     }
     background-color: $main-color;
@@ -21,6 +21,10 @@
         color: white;
         font-size: 30px;
         white-space: nowrap;
+        @media (max-width: $screen-size-phone-l) {
+            white-space: normal;
+        }
+        text-align: center;
         min-width: 50%;
 
         .profile-picture {
@@ -32,9 +36,13 @@
         }
 
         .profile-button-group {
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             width: 100%;
+            @media (max-width: $screen-size-phone-l) {
+                flex-direction: column;
+                flex: 0 0 150px;
+            }
 
             .profile-button {
                 color: white;
@@ -69,6 +77,9 @@
 
     footer {
         position: fixed;
+        @media (max-width: $screen-size-phone-l) {
+            position: absolute;
+        }
         left: 0;
         bottom: 0;
         display: flex;

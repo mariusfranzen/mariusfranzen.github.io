@@ -2,7 +2,7 @@
 @import "./sizes.scss";
 
 .right-section {
-    @media (max-width: $screen-size-phone) {
+    @media (max-width: $screen-size-phone-l) {
         width: 100vw;
         height: auto;
         overflow-y: hidden;
@@ -25,6 +25,9 @@
 
         .text-section {
             display: flex;
+            @media (max-width: $screen-size-s) {
+                flex-direction: column;
+            }
             flex-direction: row;
             justify-content: flex-start;
 
@@ -39,11 +42,17 @@
 
         .date-list-section {
             display: flex;
+            @media (max-width: $screen-size-s) {
+                flex-direction: column;
+            }
             flex-direction: row;
             justify-content: flex-start;
 
             .items {
                 flex: 0 0 calc(70%);
+                @media (max-width: $screen-size-s) {
+                    margin-left: 20px;
+                }
 
                 .group {
                     display: flex;

@@ -11,13 +11,13 @@ html, body {
 
 body {
     overflow: hidden;
-    @media (max-width: $screen-size-phone) {
+    @media (max-width: $screen-size-phone-l) {
         overflow-y: scroll;
     }
 }
 
 .container {
-    @media (max-width: $screen-size-phone) {
+    @media (max-width: $screen-size-phone-l) {
         flex-direction: column;
     }
     align-items: center;
