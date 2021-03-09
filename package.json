@@ -2,7 +2,7 @@
   "name": "mariusfranzen",
   "version": "0.1.0",
   "private": false,
-  "homepage": "http://mariusfranzen.github.io/mariusfranzen",
+  "homepage": "http://mariusfranzen.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -b master",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
