@@ -1,5 +1,6 @@
 import { Typography } from '@material-ui/core'
 import React, { ReactElement } from 'react'
+import Profile from './components/profile/Profile'
 
 interface Props {
 
@@ -8,7 +9,7 @@ interface Props {
 function App({ }: Props): ReactElement {
 	return (
 		<div>
-			<Typography>hej</Typography>
+			<Profile />
 		</div>
 	)
 }
