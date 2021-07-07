@@ -9,23 +9,18 @@ interface Props {
 function Profile({ }: Props): ReactElement {
     return (
         <div>
-            <Grid
-                container
-                direction="column"
-                justifyContent="center"
-                alignItems="center"
-            >
+            <Grid container direction="column" justifyContent="center" alignItems="center">
                 <Grid item>
-                    <Avatar alt="Marius Franzén" src={sources.avatar} />
+                    <Avatar alt="Marius Franzén" src={sources.profile.avatar} />
                 </Grid>
                 <Grid item>
-                    <Typography>{sources.name}</Typography>
+                    <Typography>{sources.profile.name}</Typography>
                 </Grid>
                 <Grid item>
-                    <Typography>{sources.title}</Typography>
+                    <Typography>{sources.profile.title}</Typography>
                 </Grid>
                 <Grid item>
-                    {sources.buttons.map((button) => (
+                    {sources.profile.buttons.map((button) => (
                         <Button component={Link} href={button.link} >{button.label}</Button>
                     ))}
                 </Grid>
