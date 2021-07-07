@@ -6,7 +6,9 @@ function TextSection(props) {
 			<div className="text-section">
 				<h3 className="header">{props.header}</h3>
 				<div className="text">
-					<p>{props.text}</p>
+					{props.text.map((item) => {
+						return (<p>{item}</p>)
+					})}
 				</div>
 			</div>
 		</div>

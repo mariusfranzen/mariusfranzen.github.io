@@ -3,9 +3,19 @@ import TextSection from './TextSection';
 import DateListSection from './DateListSection';
 
 const aboutText = "Jag har alltid varit väldigt teknikintresserad. Jag har byggt datorer, och har alltid varit den som släkt och vänner kontaktar när tekniken strular. Först läste jag till elektriker på gymnasiet, men ändrade sedan inriktning till datorteknik, då jag brinner för datorer och programmering. Jag har programmerat en hel del på min fritid, och även om jag har utbildning i programmering så är jag till största delen självlärd.";
+const aboutText2 = "Jag jobbar för tillfället på CGI med trafikverket som kund. Projekten jag jobbar med är GPD Analys och Vägyta Vägkropp. Teamet jag jobbar med har nyligen vunnit det stora ingengörspriset i digitalisering, för projektet Digital Vinter!"
 // TODO: find a way to read text from a .txt file and import it here.
 
 const experiences = [
+    {
+        title: "fullstack utvecklare",
+        subtitle: "CGI",
+        notes: [
+            "GDC Östersund",
+            "jobbar mot trafikverket"
+        ],
+        startDate: new Date(2021, 4)
+    },
     {
         title: "matbud",
         subtitle: "foodora",
@@ -61,7 +71,7 @@ const experiences = [
 
 const education = [
     {
-        title: "full stack programmering",
+        title: "fullstack programmering",
         subtitle: "lexicon",
         notes: [
             "heltid",
@@ -73,7 +83,7 @@ const education = [
         endDate: new Date(2021, 2)
     },
     {
-        title: "elteknik och datorteknik",
+        title: "elteknik & datorteknik",
         subtitle: "JGY fyrvalla",
         notes: [
             "2 år elteknik, bytte sedan inriktning och gick 2 år datorteknik",
@@ -88,7 +98,7 @@ const education = [
 function RightSection() {
     return (
         <div className="right-section">
-            <TextSection header="om mig" text={aboutText} />
+            <TextSection header="om mig" text={[aboutText, aboutText2]} />
             <DateListSection header="erfarenheter" list={experiences} />
             <DateListSection header="utbildning" list={education} />
         </div>

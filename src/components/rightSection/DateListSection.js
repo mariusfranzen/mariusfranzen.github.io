@@ -23,7 +23,7 @@ function DateListSection(props) {
 								</div>
 								<div className="date-group">
 									<h4 className="start-date">{item.startDate.toLocaleString("sv-SE", { month: "long", year: "numeric" })} - </h4>
-									<h4 className="end-date">{item.endDate.toLocaleString("sv-SE", { month: "long", year: "numeric" })}</h4>
+									{item.endDate && <h4 className="end-date">{item.endDate.toLocaleString("sv-SE", { month: "long", year: "numeric" })}</h4>}
 								</div>
 							</div>
 						);

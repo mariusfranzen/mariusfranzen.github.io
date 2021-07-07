@@ -7,6 +7,7 @@
         height: auto;
         overflow-y: hidden;
     }
+
     width: 50vw;
     height: 100vh;
     overflow-y: scroll;
@@ -23,11 +24,17 @@
     .section {
         margin: 70px;
 
+        @media (max-width: $screen-size-phone-l) {
+            margin: 30px;
+        }
+
         .text-section {
             display: flex;
+
             @media (max-width: $screen-size-s) {
                 flex-direction: column;
             }
+
             flex-direction: row;
             justify-content: flex-start;
 
@@ -42,14 +49,17 @@
 
         .date-list-section {
             display: flex;
+
             @media (max-width: $screen-size-s) {
                 flex-direction: column;
             }
+
             flex-direction: row;
             justify-content: flex-start;
 
             .items {
                 flex: 0 0 calc(70%);
+
                 @media (max-width: $screen-size-s) {
                     margin-left: 20px;
                 }
@@ -59,43 +69,47 @@
                     flex-direction: row;
                     justify-content: space-between;
                     margin-bottom: 30px;
-    
+
                     .date-group {
                         text-align: end;
                         white-space: nowrap;
                         text-transform: capitalize;
-    
+
+                        @media (max-width: $screen-size-phone-l) {
+                            font-size: small;
+                        }
+
                         .start-date {
                             margin: 0;
                         }
-            
+
                         .end-date {
                             margin: 0;
                         }
                     }
-    
+
                     .vertical-group {
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
-    
+
                         .title-group {
                             text-transform: capitalize;
-                            
+
                             .title {
                                 margin: 0;
                             }
-        
+
                             .subtitle {
                                 margin: 0;
                                 font-style: italic;
                             }
                         }
-    
+
                         .notes-list {
                             padding: 0;
                             margin-top: 0;
-    
+
                             li {
                                 &::first-letter {
                                     text-transform: capitalize;
