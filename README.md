@@ -1,14 +1,70 @@
-## Welcome to my GitHub!
+# Getting Started with Create React App
 
-### Highlighted projects:
-[mariusfranzen](https://github.com/mariusfranzen/mariusfranzen) - My resumé webpage, made with React.js (In development). Link: [mariusfranzen.online](https://mariusfranzen.online/)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[pizzaProject](https://github.com/mariusfranzen/pizza_project) - A project that I and my team is working on as a final project for our full stack programming course. It is using Java Spring.io as its backend, and JavaScript React.js as frontend. (In development)
+## Available Scripts
 
-[RealBridgeAppTestPrism](https://github.com/mariusfranzen/RealbridgeApptestPrism) - I made this project when I applied for a job at Realbridge. It's a simple multi-platform application made in C# using the .NET framework, Xamarin and prism. (Complete!)
+In the project directory, you can run:
 
-[Dual Monitor Image Viewer](https://github.com/mariusfranzen/DualMonitorImageViewer) - My first project that was actually gonna be used by someone other than me! It's a pretty simple application. You have like a controll center on your primary screen, where you can controll what images are shown on your other screen. It's meant to be used in like conferences and similar things. I threw it all together in just one day, so the code is quite ugly, but it works! (Complete!)
+### `npm start`
 
-[Project IMVI](https://github.com/mariusfranzen/Project-Imvi/tree/dev) - This was meant to be a image and video viewer, and a proper successor to the above project. I worked on it after highschool and before my full stack education, mostly with the purpose to learn .NET's WPF and MVVM. (Abandoned)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-[Forum Prototype](https://github.com/mariusfranzen/forumprototype/commits/master) - Back in 2019 when I wanted to learn PHP. It was a pretty fun project for a newbie, and it actually sort of worked! (Complete-ish)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
