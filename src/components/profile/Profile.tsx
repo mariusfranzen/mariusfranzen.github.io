@@ -1,4 +1,4 @@
-import { Avatar, Button, Grid, Link, Typography } from '@material-ui/core';
+import { Avatar, Button, Grid, Link, Paper, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import React, { ReactElement } from 'react';
 import sources from '../../sources';
@@ -7,7 +7,7 @@ interface Props {
 
 }
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
     root: {
         backgroundColor: "#005564",
         height: "100vh",
@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     },
     avatar: {
         height: "180px",
-        width: "180px"
+        width: "180px",
+        backgroundColor: "transparent"
     },
     text: {
         color: "white",
@@ -36,7 +37,7 @@ function Profile({ }: Props): ReactElement {
         <div className={classes.root}>
             <Grid container direction="column" alignItems="center">
                 <Grid item>
-                    <Avatar className={classes.avatar} alt="Marius Franzén" src={sources.profile.avatar} />
+                    <Avatar component={Paper} elevation={15} className={classes.avatar} alt="Marius Franzén" src={sources.profile.avatar} />
                 </Grid>
                 <Grid item>
                     <Typography variant="h4" className={classes.text}>{sources.profile.name}</Typography>
