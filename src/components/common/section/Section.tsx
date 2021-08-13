@@ -9,7 +9,10 @@ interface Props {
 
 const useStyles = makeStyles({
     root: {
-        padding: "20px"
+        padding: "40px 70px 10px 70px"
+    },
+    text: {
+        textTransform: "uppercase"
     }
 })
 
@@ -18,10 +21,10 @@ function Section({ title, children }: Props): ReactElement {
 
     return (
         <Grid container direction="row" justifyContent="flex-start" alignItems="flex-start" className={classes.root}>
-            <Grid item xs={2}>
-                <Typography variant="h5">{title}</Typography>
+            <Grid item xs={3}>
+                <Typography variant="body1" fontWeight="700" className={classes.text}>{title}</Typography>
             </Grid>
-            <Grid item xs={10}>
+            <Grid item xs={9}>
                 {children}
             </Grid>
         </Grid>
