@@ -34,7 +34,8 @@ export default {
                     "GDC Östersund",
                     "Jobbar mot trafikverket"
                 ],
-                fromDate: "2021-04"
+                fromDate: new Date(2021, 4),
+                toDate: undefined
             },
             {
                 title: "Matbud",
@@ -43,8 +44,8 @@ export default {
                     "Timanställning",
                     "Levererade mat till kunder"
                 ],
-                fromDate: "2020-02",
-                toDate: "2020-07"
+                fromDate: new Date(2020, 2),
+                toDate: new Date(2020, 7)
             },
             {
                 title: "Städning & Underhåll",
@@ -53,8 +54,8 @@ export default {
                     "Deltidsanställning",
                     "Städning, rengörning och underhåll av busskurer"
                 ],
-                fromDate: "2019-04",
-                toDate: "2020-02"
+                fromDate: new Date(2019, 4),
+                toDate: new Date(2020, 2)
             }
         ]
     }
