@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core'
+import { Button, Divider, Typography } from '@material-ui/core'
 import React, { ReactElement } from 'react'
 import sources from '../../sources'
 import Section from '../common/section/Section'
@@ -16,6 +16,7 @@ function Experiences({}: Props): ReactElement {
                     <Experience experience={experience} />
                 ))}
             </Section>
+            <Divider variant="middle"><Button variant="text">Se mer</Button></Divider>
         </div>
     )
 }

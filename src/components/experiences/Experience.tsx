@@ -8,6 +8,9 @@ interface Props {
 }
 
 const useStyles = makeStyles(theme => ({
+    root: {
+        marginBottom: "15px"
+    },
     list: {
         padding: 0,
         marginTop: 0
@@ -21,7 +24,7 @@ function Experience({ experience }: Props): ReactElement {
     const classes = useStyles();
 
     return (
-        <Grid container direction="row" justifyContent="flex-start" alignItems="stretch">
+        <Grid container direction="row" justifyContent="flex-start" alignItems="stretch" className={classes.root}>
             <Grid item>
                 <Grid container direction="column" justifyContent="flex-start" alignItems="flex-start">
                     <Grid item>
