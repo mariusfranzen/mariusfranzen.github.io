@@ -3,7 +3,7 @@ import avatar from './images/IMG_1253.jpg'
 export default {
     profile: {
         name: "Marius Franzén",
-        title: "Fullstack utvecklare",
+        title: "Fullstackutvecklare",
         workplace: "CGI",
         avatar: avatar,
         buttons: [

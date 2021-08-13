@@ -10,7 +10,7 @@ interface Props {
 
 function App({ }: Props): ReactElement {
 	return (
-		<Grid container direction="row" justifyContent="space-between" alignItems="stretch">
+		<Grid container direction="row" alignItems="stretch">
 			<Grid item xs={6}>
 				<Profile />
 			</Grid>
