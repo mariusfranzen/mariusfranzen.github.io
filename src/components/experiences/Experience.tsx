@@ -1,4 +1,4 @@
-import { Grid, List, ListItem, Typography } from '@material-ui/core'
+import { Grid, List, ListItem, ListItemIcon, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 import React, { ReactElement } from 'react'
 import experience from '../../types/experience'
@@ -8,7 +8,13 @@ interface Props {
 }
 
 const useStyles = makeStyles(theme => ({
-
+    list: {
+        padding: 0,
+        marginTop: 0
+    },
+    listItem: {
+        paddingTop: "0"
+    }
 }))
 
 function Experience({ experience }: Props): ReactElement {
@@ -26,11 +32,11 @@ function Experience({ experience }: Props): ReactElement {
                     </Grid>
                     <Grid item>
                         {experience.notes ? (
-                            <List>
+                            <ul className={classes.list}>
                                 {experience.notes.map((note) => (
-                                    <ListItem>{note}</ListItem>
+                                    <li className={classes.listItem}>{note}</li>
                                 ))}
-                            </List>
+                            </ul>
                         ) : null}
                     </Grid>
                 </Grid>
