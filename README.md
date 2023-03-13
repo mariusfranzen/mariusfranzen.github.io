@@ -1,14 +1,27 @@
-## Welcome to my GitHub!
+# Mariusfranzen
 
-### Highlighted projects:
-[mariusfranzen](https://github.com/mariusfranzen/mariusfranzen) - My resumé webpage, made with React.js (In development). Link: [mariusfranzen.online](https://mariusfranzen.online/)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
-[pizzaProject](https://github.com/mariusfranzen/pizza_project) - A project that I and my team is working on as a final project for our full stack programming course. It is using Java Spring.io as its backend, and JavaScript React.js as frontend. (In development)
+## Development server
 
-[RealBridgeAppTestPrism](https://github.com/mariusfranzen/RealbridgeApptestPrism) - I made this project when I applied for a job at Realbridge. It's a simple multi-platform application made in C# using the .NET framework, Xamarin and prism. (Complete!)
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-[Dual Monitor Image Viewer](https://github.com/mariusfranzen/DualMonitorImageViewer) - My first project that was actually gonna be used by someone other than me! It's a pretty simple application. You have like a controll center on your primary screen, where you can controll what images are shown on your other screen. It's meant to be used in like conferences and similar things. I threw it all together in just one day, so the code is quite ugly, but it works! (Complete!)
+## Code scaffolding
 
-[Project IMVI](https://github.com/mariusfranzen/Project-Imvi/tree/dev) - This was meant to be a image and video viewer, and a proper successor to the above project. I worked on it after highschool and before my full stack education, mostly with the purpose to learn .NET's WPF and MVVM. (Abandoned)
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-[Forum Prototype](https://github.com/mariusfranzen/forumprototype/commits/master) - Back in 2019 when I wanted to learn PHP. It was a pretty fun project for a newbie, and it actually sort of worked! (Complete-ish)
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
