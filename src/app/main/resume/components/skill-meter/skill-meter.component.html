@@ -1,1 +1,12 @@
-<p>skill-meter works!</p>
+<div class="w-100">
+  <h6 class="fw-bold mb-0">
+    {{ name | uppercase
+    }}<span class="fw-lighter sm-text"
+      >&emsp;{{ skillDescription | uppercase }}</span
+    >
+  </h6>
+
+  <span class="meter-background"
+    ><span class="inner-meter" [style.width]="level + '%'"></span
+  ></span>
+</div>

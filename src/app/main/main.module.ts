@@ -5,13 +5,15 @@ import { MenuComponent } from './menu/menu.component';
 import { MainComponent } from './main/main.component';
 import { AppCommonModule } from '../common/app-common.module';
 import { SkillMeterComponent } from './resume/components/skill-meter/skill-meter.component';
+import { ExperienceComponent } from './resume/components/experience/experience.component';
 
 @NgModule({
   declarations: [
     ResumeComponent,
     MenuComponent,
     MainComponent,
-    SkillMeterComponent
+    SkillMeterComponent,
+    ExperienceComponent
   ],
   imports: [
     CommonModule,

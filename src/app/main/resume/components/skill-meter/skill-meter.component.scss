@@ -1,0 +1,21 @@
+@import '../../../../../scss/index';
+
+.meter-background {
+  display: block;
+  background-color: $gray-500;
+  width: 90%;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.inner-meter {
+  display: block;
+  background-color: $secondary;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.sm-text {
+  font-size: small;
+  font-weight: 100;
+}
