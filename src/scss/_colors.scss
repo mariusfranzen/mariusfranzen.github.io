@@ -9,3 +9,15 @@ $custom-colors: (
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
+.bg-primary-alt-1 {
+  background-color: $primary-alt-1;
+}
+
+.bg-primary-alt-2 {
+  background-color: $primary-alt-1;
+}
+
+.bg-secondary-alt-1 {
+  background-color: $secondary-alt-1;
+}
