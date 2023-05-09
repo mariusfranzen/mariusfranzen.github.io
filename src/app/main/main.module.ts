@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ResumeComponent } from './resume/resume.component';
 import { MenuComponent } from './menu/menu.component';
 import { MainComponent } from './main/main.component';
+import { AppCommonModule } from '../common/app-common.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { MainComponent } from './main/main.component';
     MainComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppCommonModule
   ]
 })
 export class MainModule { }

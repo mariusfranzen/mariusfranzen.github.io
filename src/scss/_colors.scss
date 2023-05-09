@@ -1,0 +1,11 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import './variables';
+
+$custom-colors: (
+  "primary-alt-1": $primary-alt-1,
+  "primary-alt-2": $primary-alt-2,
+  "secondary-alt-1": $secondary-alt-1
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
