@@ -1,6 +1,11 @@
 @import './bootstrap';
 @import '../../node_modules/@fontsource/roboto/index';
+@import './sizing';
 
 body {
   font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+
+.center {
+  margin: 0 auto;
 }

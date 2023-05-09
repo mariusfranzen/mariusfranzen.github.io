@@ -1,0 +1,28 @@
+@import '../../../scss/variables';
+
+.divider-solid-secondary {
+  border-bottom: 2px solid $secondary;
+}
+
+.fill-half-button {
+  width: 50%;
+  border: none;
+  height: 55px;
+  font-weight: bolder;
+  &:hover {
+    &.bg-primary {
+      background-color: scale-color($color: $primary, $lightness: -20%) !important;
+    }
+    &.bg-secondary {
+      background-color: scale-color($color: $secondary, $lightness: -20%) !important;
+    }
+  }
+  &:active {
+    &.bg-primary {
+      background-color: scale-color($color: $primary, $lightness: -30%) !important;
+    }
+    &.bg-secondary {
+      background-color: scale-color($color: $secondary, $lightness: -30%) !important;
+    }
+  }
+}

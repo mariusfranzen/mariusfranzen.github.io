@@ -1,0 +1,5 @@
+@for $percentage from 0 through 100 {
+  .w-#{$percentage} {
+    width: percentage($percentage / 100) !important;
+  }
+}
