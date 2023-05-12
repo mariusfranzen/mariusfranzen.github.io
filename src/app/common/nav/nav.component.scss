@@ -1,3 +1,5 @@
+@import '../../../scss/variables';
+
 ul {
   list-style-type: none;
   display: flex;
@@ -9,18 +11,20 @@ ul {
     min-width: 100px;
     font-size: larger;
     font-weight: 500;
-
-    &:not(:last-child),
-    &:not(:first-child) {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
   }
 
   a {
     color: white;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    display: block;
+
     &:link {
       text-decoration: none;
+    }
+    &:hover {
+      background-color: scale-color($color: $primary, $lightness: -20%);
     }
   }
 }
