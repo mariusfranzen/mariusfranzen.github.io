@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-skill-meter',
@@ -6,14 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./skill-meter.component.scss'],
   host: { 'class': 'w-50 mb-4' }
 })
-export class SkillMeterComponent implements OnInit {
+export class SkillMeterComponent {
   @Input() name: string = 'test';
   @Input() level: number = 50;
   @Input() skillDescription?: string;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

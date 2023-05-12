@@ -1,1 +1,10 @@
-<p>contact-form works!</p>
+<form class="d-flex flex-column p-5" [formGroup]="contactFormGroup">
+  <input id="name" type="text" formControlName="name" placeholder="Name*">
+  <input id="email" type="email" formControlName="email" placeholder="Email*">
+  <input id="phone" type="tel" formControlName="phone" placeholder="Phonenumber">
+  <textarea id="message" formControlName="message" placeholder="Message*"></textarea>
+  <div class="d-flex flex-row justify-content-between">
+    <button type="submit" class="w-25" [disabled]="!contactFormGroup.valid">SUBMIT</button>
+    <sub>Minimum of 25 characters - {{messageLength}}/25</sub>
+  </div>
+</form>

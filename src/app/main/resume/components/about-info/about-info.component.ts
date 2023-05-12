@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-about-info',
@@ -6,13 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./about-info.component.scss'],
   host: { 'class': 'w-50 mb-2' }
 })
-export class AboutInfoComponent implements OnInit {
+export class AboutInfoComponent {
   @Input() description = '';
   @Input() info = '';
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

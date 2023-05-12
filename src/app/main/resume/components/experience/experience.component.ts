@@ -2,8 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss']
+  templateUrl: './experience.component.html'
 })
 export class ExperienceComponent implements OnInit {
   @Input() date!: [Date, Date?];
@@ -30,8 +29,6 @@ export class ExperienceComponent implements OnInit {
     'December',
   ];
 
-  constructor() {}
-
   ngOnInit(): void {
     if (this.date[1]) {
       this.hasEndDate = true;
@@ -42,6 +39,5 @@ export class ExperienceComponent implements OnInit {
       }
     }
     this.startDate = `${this.monthNames[this.date[0].getMonth()]} ${this.date[0].getFullYear()}`;
-
   }
 }

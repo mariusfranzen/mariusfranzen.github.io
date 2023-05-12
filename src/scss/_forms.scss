@@ -1,0 +1,38 @@
+@import '../../node_modules/bootstrap/scss/variables';
+@import './variables';
+
+input, textarea {
+  border: 0;
+  margin: 0.5rem 0;
+  background-color: $gray-400;
+  padding: 0.75rem;
+  &:hover {
+    background-color: scale-color($color: $gray-400, $lightness: -5%) !important;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form {
+  button {
+    border: 0;
+    color: white;
+    background-color: $primary;
+    min-height: 2.5rem;
+
+    &:hover:not(:disabled) {
+      background-color: scale-color($color: $primary, $lightness: -20%) !important;
+    }
+    &:active:not(:disabled) {
+      background-color: scale-color($color: $primary, $lightness: -30%) !important;
+    }
+
+    &:disabled {
+      background-color: $gray-600;
+      cursor: not-allowed;
+    }
+  }
+}

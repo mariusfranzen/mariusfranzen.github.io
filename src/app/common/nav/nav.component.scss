@@ -10,7 +10,8 @@ ul {
     font-size: larger;
     font-weight: 500;
 
-    &:not(:last-child), &:not(:first-child) {
+    &:not(:last-child),
+    &:not(:first-child) {
       margin-top: 1rem;
       margin-bottom: 1rem;
     }

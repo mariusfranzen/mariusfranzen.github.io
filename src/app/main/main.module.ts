@@ -8,6 +8,7 @@ import { SkillMeterComponent } from './resume/components/skill-meter/skill-meter
 import { ExperienceComponent } from './resume/components/experience/experience.component';
 import { AboutInfoComponent } from './resume/components/about-info/about-info.component';
 import { ContactFormComponent } from './resume/components/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContactFormComponent } from './resume/components/contact-form/contact-f
   ],
   imports: [
     CommonModule,
-    AppCommonModule
+    AppCommonModule,
+    ReactiveFormsModule
   ]
 })
 export class MainModule { }

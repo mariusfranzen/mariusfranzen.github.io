@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { DateTime } from 'luxon';
 import Experience from 'src/interfaces/Experience';
 import Information from 'src/interfaces/Information';
@@ -9,12 +9,7 @@ import Skill from 'src/interfaces/Skill';
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.scss'],
 })
-export class ResumeComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {
-  }
-
+export class ResumeComponent {
   experiences: Experience[] = [
     {
       title: 'Swamp Management',
@@ -75,10 +70,18 @@ export class ResumeComponent implements OnInit {
   ];
 
   skills: Skill[] = [
-    { title: 'Ogre-related Activities ', level: 9, description: 'Excellent roaring' },
+    {
+      title: 'Ogre-related Activities ',
+      level: 9,
+      description: 'Excellent roaring',
+    },
     { title: 'Fairy Tale Knowledge', level: 9, description: 'Extensive' },
     { title: 'Combat Skills', level: 8, description: 'Natural ability' },
-    { title: 'Problem-Solving', level: 8, description: 'Thinking outside the box' },
+    {
+      title: 'Problem-Solving',
+      level: 8,
+      description: 'Thinking outside the box',
+    },
     { title: 'Communication', level: 7, description: 'Fluent in Ogreish' },
     { title: 'Leadership', level: 7, description: 'Fair leader' },
   ];
@@ -88,5 +91,5 @@ export class ResumeComponent implements OnInit {
     { description: 'country', info: 'Duloc' },
     { description: 'email', info: 'ogrewithlayers@duloc.com' },
     { description: 'address', info: 'Swamp 1A' },
-  ]
+  ];
 }
