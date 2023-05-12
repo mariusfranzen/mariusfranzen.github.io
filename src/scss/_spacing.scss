@@ -14,3 +14,9 @@ $spacers: (
   9: $spacer * 5.5,
   10: $spacer * 6.5,
 );
+
+@for $pixels from 0 through 100 {
+  .min-w-#{$pixels}px {
+    min-width: #{$pixels}px !important;
+  }
+}

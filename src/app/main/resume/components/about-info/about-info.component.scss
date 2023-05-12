@@ -1,0 +1,9 @@
+@import '../../../../../scss/variables';
+
+dt {
+  color: $primary;
+  font-weight: 900;
+  &::after {
+    content: ": ";
+  }
+}

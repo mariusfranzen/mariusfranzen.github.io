@@ -4,7 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
   selector: 'app-skill-meter',
   templateUrl: './skill-meter.component.html',
   styleUrls: ['./skill-meter.component.scss'],
-  host: { 'class': 'w-50' }
+  host: { 'class': 'w-50 mb-4' }
 })
 export class SkillMeterComponent implements OnInit {
   @Input() name: string = 'test';

@@ -6,6 +6,8 @@ import { MainComponent } from './main/main.component';
 import { AppCommonModule } from '../common/app-common.module';
 import { SkillMeterComponent } from './resume/components/skill-meter/skill-meter.component';
 import { ExperienceComponent } from './resume/components/experience/experience.component';
+import { AboutInfoComponent } from './resume/components/about-info/about-info.component';
+import { ContactFormComponent } from './resume/components/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { ExperienceComponent } from './resume/components/experience/experience.c
     MenuComponent,
     MainComponent,
     SkillMeterComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    AboutInfoComponent,
+    ContactFormComponent
   ],
   imports: [
     CommonModule,

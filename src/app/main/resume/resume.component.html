@@ -20,8 +20,13 @@
   </button>
 
   <section class="d-flex flex-column p-5">
-    <h1 class="h2 fw-bold">About</h1>
+    <h1 class="h2 fw-bold" id="about">About</h1>
     <div>
+      <dl class="d-flex flex-row flex-wrap mt-3">
+        <ng-container *ngFor="let item of info">
+          <app-about-info [description]="item.description" [info]="item.info"></app-about-info>
+        </ng-container>
+      </dl>
       <p>
         Once upon a time there was a lovely princess. But she had an enchantment
         upon her of a fearful sort which could only be broken by love's first
@@ -29,21 +34,34 @@
         fire-breathing dragon. Many brave knigts had attempted to free her from
         this dreadful prison, but non prevailed. She waited in the dragon's keep
         in the highest room of the tallest tower for her true love and true
-        love's first kiss. Hahahahah! Like that's ever gonna happen. What a load of -
+        love's first kiss. Hahahahah! Like that's ever gonna happen. What a load
+        of -
       </p>
-      <div class="d-flex justify-content-between mt-5">
-        <app-skill-meter [level]="100" name="roar" skillDescription="eardrum shattering"></app-skill-meter>
-        <app-skill-meter [level]="90" name="feline befriending" skillDescription="very good"></app-skill-meter>
-      </div>
-      <div class="d-flex justify-content-between mt-4">
-        <app-skill-meter [level]="55" name="dragon slaying" skillDescription="mixed results"></app-skill-meter>
-        <app-skill-meter [level]="45" name="social skills" skillDescription="what is that"></app-skill-meter>
+      <div class="d-flex flex-row flex-wrap mt-5">
+        <ng-container *ngFor="let item of skills">
+          <app-skill-meter [level]="item.level * 10" [name]="item.title" [skillDescription]="item.description"></app-skill-meter>
+        </ng-container>
       </div>
     </div>
   </section>
 
   <section class="d-flex flex-column p-5 pt-0">
-    <h1 class="h2 fw-bold">Resume</h1>
+    <h1 class="h2 fw-bold" id="resume">Resume</h1>
+    <div class="d-flex flex-row flex-wrap">
+      <ng-container *ngFor="let experience of experiences; let index = index">
+        <div class="w-50 experience">
+          <app-experience [date]="experience.date" [description]="experience.description" [title]="experience.title"></app-experience>
+        </div>
+      </ng-container>
+    </div>
+  </section>
+
+  <section class="d-flex flex-column p-5 pt-0">
+    <h1 class="h2 fw-bold" id="portfolio">Portfolio</h1>
+  </section>
+
+  <section class="d-flex flex-column p-5 pt-0">
+    <h1 class="h2 fw-bold" id="contact">Contact</h1>
     <div>
 
     </div>

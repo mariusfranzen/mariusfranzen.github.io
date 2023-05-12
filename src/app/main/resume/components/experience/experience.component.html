@@ -1,1 +1,7 @@
-<p>experience works!</p>
+<div class="mx-4">
+  <sub>{{startDate}} {{singleMonth ? '' : '-'}} {{hasEndDate ? endDate : 'Ongoing'}}</sub>
+  <h4>{{title}}</h4>
+  <ul>
+    <li *ngFor="let item of description">{{item}}</li>
+  </ul>
+</div>
