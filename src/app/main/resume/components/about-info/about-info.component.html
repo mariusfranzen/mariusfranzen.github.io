@@ -1,4 +1,5 @@
 <div class="d-flex">
   <dt class="min-w-85px">{{ description | uppercase }}</dt>
-  <dd>{{ info }}</dd>
+  <dd *ngIf="!hasLink">{{ info }}</dd>
+  <dd *ngIf="hasLink"><a [href]="link">{{ info }}</a></dd>
 </div>

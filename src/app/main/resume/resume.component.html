@@ -24,7 +24,7 @@
     <div>
       <dl class="d-flex flex-row flex-wrap mt-3">
         <ng-container *ngFor="let item of info">
-          <app-about-info [description]="item.description" [info]="item.info"></app-about-info>
+          <app-about-info [description]="item.description" [info]="item.info" [link]="item.link"></app-about-info>
         </ng-container>
       </dl>
       <p>

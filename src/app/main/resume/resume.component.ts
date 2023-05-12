@@ -89,7 +89,7 @@ export class ResumeComponent {
   info: Information[] = [
     { description: 'age', info: '42' },
     { description: 'country', info: 'Duloc' },
-    { description: 'email', info: 'ogrewithlayers@duloc.com' },
+    { description: 'email', info: 'ogrewithlayers@duloc.com', link: 'mailto:ogrewithlayers@duloc.com' },
     { description: 'address', info: 'Swamp 1A' },
   ];
 }
